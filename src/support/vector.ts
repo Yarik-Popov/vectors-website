@@ -2,6 +2,15 @@
 // const COLOUR_AXES = "grey";
 // const COLOUR_VECTOR_RESULT = "black";
 
+/**
+ * This is a 2D vector class. It handles the storing and modifying of a vector. All parameters are optional
+  * @param x The x component
+    @param y The y component
+    @param magnitude The magnitude (If this is passed, it will create a vector using the magnitude and angle
+    ignoring x, y)
+    @param angle: The angle of the vector (This is only needed when the magnitude is passed in)
+    @param rounding_decimal: How many decimals to round the other parameters in the vector
+ */
 class Vector2D 
 {
     x: number
@@ -14,15 +23,7 @@ class Vector2D
   constructor(x = 0, y = 0, magnitude = 0, angle = 0, {
     rounding_decimal = 12
   } = {}) {
-    /*
-    This is a 2D vector class. It handles the storing and modifying of a vector.
-     :param x: The x component
-    :param y: The y component
-    :param magnitude: The magnitude (If this is passed, it will create a vector using the magnitude and angle
-    ignoring x, y)
-    :param angle: The angle of the vector (This is only needed when the magnitude is passed in)
-    :param rounding_decimal: How many decimals to round the other parameters in the vector
-    */
+    
     this.x = x;
     this.y = y;
     this.magnitude = magnitude;
